@@ -1,6 +1,10 @@
 {
-    "DESIGN_NAME": "twoscomplement_",
-    "VERILOG_FILES": ["src/twoscomplement_.v"],
-    "CLOCK_PORT": "clk",
-    "CLOCK_PERIOD": 10.0
+  "DESIGN_NAME": "myBasic_ALU",
+  "VERILOG_FILES": ["designs/myBasic_ALU/src/myBasic_ALU.v"],
+  "SDC_FILE": "designs/myBasic_ALU/src/myBasic_ALU.sdc",
+  "MIN_BUFFER_PERCENTAGE": 5,
+  "MAX_BUFFER_PERCENTAGE": 50,
+  "DIE_AREA": "0 0 100 100",
+  "CORE_AREA": "10 10 90 90"
 }
+
