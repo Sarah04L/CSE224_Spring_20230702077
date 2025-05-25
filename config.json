@@ -1,10 +1,23 @@
 {
-  "DESIGN_NAME": "myBasic_ALU",
-  "VERILOG_FILES": ["designs/myBasic_ALU/src/myBasic_ALU.v"],
-  "SDC_FILE": "designs/myBasic_ALU/src/myBasic_ALU.sdc",
+  "DESIGN_NAME": "ZeroToFiveCounter",
+  "VERILOG_FILES": [
+    "designs/ZeroToFiveCounter/src/ZeroToFiveCounter.v",
+    "designs/ZeroToFiveCounter/src/SevenSegmentDecoder.v"
+  ],
+  "VERILOG_INCLUDE_DIRS": [
+    "designs/ZeroToFiveCounter/src"
+  ],
+  "SDC_FILE": "designs/ZeroToFiveCounter/src/ZeroToFiveCounter.sdc",
+  "PNR_SDC_FILE": "designs/ZeroToFiveCounter/src/ZeroToFiveCounter.sdc",
+  "SIGNOFF_SDC_FILE": "designs/ZeroToFiveCounter/src/ZeroToFiveCounter.sdc",
+  "CLOCK_PORT": "clk",  
   "MIN_BUFFER_PERCENTAGE": 5,
   "MAX_BUFFER_PERCENTAGE": 50,
-  "DIE_AREA": "0 0 100 100",
-  "CORE_AREA": "10 10 90 90"
+  "CORE_WIDTH": 40,
+  "CORE_HEIGHT": 40,
+  "MIN_CORE_AREA": 1600,
+  "CORE_UTILIZATION": 0.5,
+  "ASPECT_RATIO": 1.0,
+  "POWER_GRID_PITCH_X": 10,
+  "POWER_GRID_PITCH_Y": 10
 }
-
