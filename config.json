@@ -1,23 +1,24 @@
 {
-  "DESIGN_NAME": "ZeroToFiveCounter",
-  "VERILOG_FILES": [
-    "designs/ZeroToFiveCounter/src/ZeroToFiveCounter.v",
-    "designs/ZeroToFiveCounter/src/SevenSegmentDecoder.v"
-  ],
-  "VERILOG_INCLUDE_DIRS": [
-    "designs/ZeroToFiveCounter/src"
-  ],
-  "SDC_FILE": "designs/ZeroToFiveCounter/src/ZeroToFiveCounter.sdc",
-  "PNR_SDC_FILE": "designs/ZeroToFiveCounter/src/ZeroToFiveCounter.sdc",
-  "SIGNOFF_SDC_FILE": "designs/ZeroToFiveCounter/src/ZeroToFiveCounter.sdc",
-  "CLOCK_PORT": "clk",  
-  "MIN_BUFFER_PERCENTAGE": 5,
-  "MAX_BUFFER_PERCENTAGE": 50,
-  "CORE_WIDTH": 40,
-  "CORE_HEIGHT": 40,
-  "MIN_CORE_AREA": 1600,
-  "CORE_UTILIZATION": 0.5,
-  "ASPECT_RATIO": 1.0,
-  "POWER_GRID_PITCH_X": 10,
-  "POWER_GRID_PITCH_Y": 10
+  "DESIGN_NAME": "cpu_lab6",
+  "TOP_MODULE": "cpu_lab6",
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 10.0,
+  "VERILOG_FILES": ["dir::src/cpu_lab6.v"],
+  "SDC_FILE": "src/cpu_lab6.sdc",
+  "PIN_ORDER": "pin_order.cfg",
+
+  "FP_SIZING": "absolute",
+  "DIE_AREA": "0 0 100 100",
+  "FP_CORE_UTIL": 50,
+  "FP_ASPECT_RATIO": 1.0,
+
+  "FP_IO_HLAYER": "met3",
+  "FP_IO_VLAYER": "met2",
+
+  "FP_PDN_VPITCH": 20.0,
+  "FP_PDN_HPITCH": 20.0,
+  "FP_PDN_VOFFSET": 3.0,
+  "FP_PDN_HOFFSET": 3.0,
+  "FP_PDN_VWIDTH": 1.6,
+  "FP_PDN_HWIDTH": 1.6
 }
