@@ -1,0 +1,14 @@
+%Warning-WIDTHTRUNC: /openlane/designs/lab6_cpu/src/lab6_cpu.v:51:28: Operator ASSIGNDLY expects 8 bits on the Assign RHS, but Assign RHS's SEL generates 16 bits.
+                                                                    : ... note: In instance 'lab6_cpu'
+   51 |                         PC <= instruction[15:0];
+      |                            ^~
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.018
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: /openlane/designs/lab6_cpu/src/lab6_cpu.v:57:24: Operator ASSIGNDLY expects 8 bits on the Assign RHS, but Assign RHS's SEL generates 26 bits.
+                                                                    : ... note: In instance 'lab6_cpu'
+   57 |                     PC <= instruction[25:0];
+      |                        ^~
+%Warning-UNDRIVEN: /openlane/designs/lab6_cpu/src/lab6_cpu.v:10:16: Signal is not driven: 'regfile'
+                                                                  : ... note: In instance 'lab6_cpu'
+   10 |     reg [31:0] regfile [0:31];
+      |                ^~~~~~~
